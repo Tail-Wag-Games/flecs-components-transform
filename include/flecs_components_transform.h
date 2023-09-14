@@ -69,7 +69,7 @@ typedef struct EcsTransform2 {
 FLECS_COMPONENTS_TRANSFORM_API
 extern ECS_COMPONENT_DECLARE(EcsTransform3);
 
-typedef struct EcsTransform3 {
+typedef CGLM_ALIGN_MAT struct EcsTransform3 {
     mat4 value;
 } EcsTransform3;
 
